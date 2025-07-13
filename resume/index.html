@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-info">
+                <h1>KRISHNA DILEEP MARELLA</h1>
+                <p>Email: krishnadileepmarella408@gmail.com</p>
+                <p>Phone: 9666257214</p>
+                <p>Location: Muramalla, India</p>
+            </div>
+            <img src="Picsart_24-10-25_21-54-19-611-min.jpg" alt="pic">
+        </div>
+        <h3>About Me</h3>
+        <hr>
+        <p>I am a passonate full-stack developer with a strong intrest in responsive web applications.</p>
+        <h3>Skills</h3>
+        <hr>
+        <ul>
+            <p><li><b>Programming Languages:</b> C, Java, HTML, CSS.</li></p>
+            <p><li><b>Database:</b> MySQL.</li></p>
+            <p><li><b>Other Skills:</b> Good Communication, Public Speaking, Leadership Qualities.</li></p>
+        </ul>
+        <h3>Projects</h3>
+        <hr>
+        <ul>
+                       <p><b>Obesity Risk Prediction System (Machine Learning Model)</b></p>
+            <li>Developed a web platform to pre-book tables in a Restaurant .</li>
+            <li>Developed an Web Application on the idea of book rental platform.</li>
+        </ul>
+        <h3>Certifications</h3>
+        <hr>
+        <ul>
+            <li>Introduction to Cybersecurity</li>
+            <li>C Programming</li>
+            <li>English Language Certification (B1 - 3rd level)</li>
+        </ul>
+        <h3>Hobbies</h3>
+        <hr>
+        <ul>
+            <li>Explore new things</li>
+            <li>Reading books</li>
+        </ul>
+        <h3>Contact</h3>
+        <hr>
+        <p><b>Email:</b>krishnadileepmarella408@gmail.com</p>
+        <p><b>Phone:</b> 9666257214</p>
+        <footer style="text-align: center;"> &COPY; 2025 Krishna Dileep Marella</footer>
+    </div>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+      <script>
+    let isDark = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const button = document.querySelector('.toggle-btn');
+      const main=document.querySelector('.main');
+
+      if (!isDark) {
+        body.style.backgroundColor = "#002000"; // Dark green
+        body.style.color = "#ffffff"; // make text light
+        button.textContent = "☀️ Light Mode";
+        button.style.backgroundColor = "#66ff66";
+        button.style.color = "#003300";
+        main.style.color="#000000"
+
+      } else {
+        body.style.backgroundColor = "#ccf2cc"; // Light mode
+        body.style.color = "black"; // restore text color
+        button.textContent = "🌙 Dark Mode";
+        button.style.backgroundColor = "#2ecc71";
+        button.style.color = "white";
+      }
+
+      isDark = !isDark;
+    }
+  </script>
+</body>
+</html>
+
